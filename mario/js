@@ -15,7 +15,9 @@ mario.classList.remove('jump');
 const loop = sentInterval(() =>{
 
  const pipePosition = pipe.offsetLft;
-
+ const marioPoaition = +window.getComputedStyle(mario).bottom.replace('px', '');
+ console.log(marioPosition);
+ 
  if (pipePosition_< 120){
 
   pipe.style.animation = 'none';
